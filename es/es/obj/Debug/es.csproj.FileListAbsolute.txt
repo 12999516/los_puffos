@@ -1,0 +1,11 @@
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.csproj.AssemblyReference.cache
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.csproj.SuggestedBindingRedirects.cache
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.Form1.resources
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.Properties.Resources.resources
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.csproj.GenerateResource.cache
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.csproj.CoreCompileInputs.cache
+C:\Users\12999516\Desktop\puffi!!!\es\es\bin\Debug\es.exe.config
+C:\Users\12999516\Desktop\puffi!!!\es\es\bin\Debug\es.exe
+C:\Users\12999516\Desktop\puffi!!!\es\es\bin\Debug\es.pdb
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.exe
+C:\Users\12999516\Desktop\puffi!!!\es\es\obj\Debug\es.pdb
