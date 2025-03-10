@@ -59,7 +59,10 @@ namespace es
 
             if(x_try > x_min && x_try< x_max)
             {
-
+                if(y_try > y_min && y_try < y_max)
+                {
+                    pnl_puffo.Location = new Point(x_try, y_try);
+                }
             }
         }
 
@@ -71,22 +74,22 @@ namespace es
         }
         private void btn_puffo_up_Click(object sender, EventArgs e)
         {
-            aggiona_puffo_muovi(10, 0);
+            aggiona_puffo_muovi(0, -10);
         }
 
         private void btn_puffo_down_Click(object sender, EventArgs e)
         {
-
+            aggiona_puffo_muovi(0, 10);
         }
 
         private void btn_puffo_right_Click(object sender, EventArgs e)
         {
-
+            aggiona_puffo_muovi(10, 0);
         }
 
         private void btn_puffo_left_Click(object sender, EventArgs e)
         {
-
+            aggiona_puffo_muovi(-10, 0);
         }
     }
 }
