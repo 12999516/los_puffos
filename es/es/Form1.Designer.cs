@@ -39,10 +39,14 @@
             this.btn_garga_down = new System.Windows.Forms.Button();
             this.btn_garga_right = new System.Windows.Forms.Button();
             this.pnl_campo = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.lbl_garga_punti = new System.Windows.Forms.Label();
+            this.lbl_puffo_punti = new System.Windows.Forms.Label();
+            this.pnl_garga_img = new System.Windows.Forms.Panel();
+            this.pnl_puffo_img = new System.Windows.Forms.Panel();
             this.pnl_garga = new System.Windows.Forms.Panel();
             this.pnl_puffo = new System.Windows.Forms.Panel();
             this.pnl_casa = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.pnl_albero3 = new System.Windows.Forms.Panel();
             this.pnl_albero2 = new System.Windows.Forms.Panel();
             this.pnl_albero4 = new System.Windows.Forms.Panel();
@@ -53,10 +57,6 @@
             this.pnl_albero8 = new System.Windows.Forms.Panel();
             this.pnl_albero7 = new System.Windows.Forms.Panel();
             this.pnl_albero6 = new System.Windows.Forms.Panel();
-            this.lbl_garga_punti = new System.Windows.Forms.Label();
-            this.lbl_puffo_punti = new System.Windows.Forms.Label();
-            this.pnl_garga_img = new System.Windows.Forms.Panel();
-            this.pnl_puffo_img = new System.Windows.Forms.Panel();
             this.tbl_puffo.SuspendLayout();
             this.tbl_garga.SuspendLayout();
             this.pnl_campo.SuspendLayout();
@@ -89,6 +89,7 @@
             this.btn_puffo_up.Name = "btn_puffo_up";
             this.btn_puffo_up.Size = new System.Drawing.Size(57, 53);
             this.btn_puffo_up.TabIndex = 8;
+            this.btn_puffo_up.Text = "su";
             this.btn_puffo_up.UseVisualStyleBackColor = true;
             this.btn_puffo_up.Click += new System.EventHandler(this.btn_puffo_up_Click);
             // 
@@ -99,6 +100,7 @@
             this.btn_puffo_left.Name = "btn_puffo_left";
             this.btn_puffo_left.Size = new System.Drawing.Size(57, 53);
             this.btn_puffo_left.TabIndex = 5;
+            this.btn_puffo_left.Text = "sinistra";
             this.btn_puffo_left.UseVisualStyleBackColor = true;
             this.btn_puffo_left.Click += new System.EventHandler(this.btn_puffo_left_Click);
             // 
@@ -109,6 +111,7 @@
             this.btn_puffo_right.Name = "btn_puffo_right";
             this.btn_puffo_right.Size = new System.Drawing.Size(57, 53);
             this.btn_puffo_right.TabIndex = 7;
+            this.btn_puffo_right.Text = "destra";
             this.btn_puffo_right.UseVisualStyleBackColor = true;
             this.btn_puffo_right.Click += new System.EventHandler(this.btn_puffo_right_Click);
             // 
@@ -119,6 +122,7 @@
             this.btn_puffo_down.Name = "btn_puffo_down";
             this.btn_puffo_down.Size = new System.Drawing.Size(57, 53);
             this.btn_puffo_down.TabIndex = 6;
+            this.btn_puffo_down.Text = "giù";
             this.btn_puffo_down.UseVisualStyleBackColor = true;
             this.btn_puffo_down.Click += new System.EventHandler(this.btn_puffo_down_Click);
             // 
@@ -149,6 +153,7 @@
             this.btn_garga_up.Name = "btn_garga_up";
             this.btn_garga_up.Size = new System.Drawing.Size(57, 53);
             this.btn_garga_up.TabIndex = 0;
+            this.btn_garga_up.Text = "su";
             this.btn_garga_up.UseVisualStyleBackColor = true;
             this.btn_garga_up.Click += new System.EventHandler(this.btn_garga_up_Click);
             // 
@@ -159,6 +164,7 @@
             this.btn_garga_left.Name = "btn_garga_left";
             this.btn_garga_left.Size = new System.Drawing.Size(57, 53);
             this.btn_garga_left.TabIndex = 1;
+            this.btn_garga_left.Text = "sinistra";
             this.btn_garga_left.UseVisualStyleBackColor = true;
             this.btn_garga_left.Click += new System.EventHandler(this.btn_garga_left_Click);
             // 
@@ -169,6 +175,7 @@
             this.btn_garga_down.Name = "btn_garga_down";
             this.btn_garga_down.Size = new System.Drawing.Size(57, 55);
             this.btn_garga_down.TabIndex = 3;
+            this.btn_garga_down.Text = "giù";
             this.btn_garga_down.UseVisualStyleBackColor = true;
             this.btn_garga_down.Click += new System.EventHandler(this.btn_garga_down_Click);
             // 
@@ -179,6 +186,7 @@
             this.btn_garga_right.Name = "btn_garga_right";
             this.btn_garga_right.Size = new System.Drawing.Size(60, 53);
             this.btn_garga_right.TabIndex = 4;
+            this.btn_garga_right.Text = "destra";
             this.btn_garga_right.UseVisualStyleBackColor = true;
             this.btn_garga_right.Click += new System.EventHandler(this.btn_garga_right_Click);
             // 
@@ -205,33 +213,6 @@
             this.pnl_campo.Size = new System.Drawing.Size(520, 480);
             this.pnl_campo.TabIndex = 2;
             // 
-            // pnl_garga
-            // 
-            this.pnl_garga.BackColor = System.Drawing.Color.Black;
-            this.pnl_garga.Location = new System.Drawing.Point(241, 185);
-            this.pnl_garga.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_garga.Name = "pnl_garga";
-            this.pnl_garga.Size = new System.Drawing.Size(40, 37);
-            this.pnl_garga.TabIndex = 4;
-            // 
-            // pnl_puffo
-            // 
-            this.pnl_puffo.BackColor = System.Drawing.Color.Blue;
-            this.pnl_puffo.Location = new System.Drawing.Point(148, 185);
-            this.pnl_puffo.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_puffo.Name = "pnl_puffo";
-            this.pnl_puffo.Size = new System.Drawing.Size(40, 37);
-            this.pnl_puffo.TabIndex = 1;
-            // 
-            // pnl_casa
-            // 
-            this.pnl_casa.BackColor = System.Drawing.Color.Red;
-            this.pnl_casa.Location = new System.Drawing.Point(40, 185);
-            this.pnl_casa.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_casa.Name = "pnl_casa";
-            this.pnl_casa.Size = new System.Drawing.Size(40, 37);
-            this.pnl_casa.TabIndex = 1;
-            // 
             // panel11
             // 
             this.panel11.Location = new System.Drawing.Point(241, 185);
@@ -239,96 +220,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(0, 0);
             this.panel11.TabIndex = 3;
-            // 
-            // pnl_albero3
-            // 
-            this.pnl_albero3.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero3.Location = new System.Drawing.Point(241, 116);
-            this.pnl_albero3.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero3.Name = "pnl_albero3";
-            this.pnl_albero3.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero3.TabIndex = 2;
-            // 
-            // pnl_albero2
-            // 
-            this.pnl_albero2.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero2.Location = new System.Drawing.Point(148, 116);
-            this.pnl_albero2.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero2.Name = "pnl_albero2";
-            this.pnl_albero2.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero2.TabIndex = 1;
-            // 
-            // pnl_albero4
-            // 
-            this.pnl_albero4.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero4.Location = new System.Drawing.Point(289, 116);
-            this.pnl_albero4.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero4.Name = "pnl_albero4";
-            this.pnl_albero4.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero4.TabIndex = 1;
-            // 
-            // pnl_albero5
-            // 
-            this.pnl_albero5.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero5.Location = new System.Drawing.Point(349, 116);
-            this.pnl_albero5.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero5.Name = "pnl_albero5";
-            this.pnl_albero5.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero5.TabIndex = 1;
-            // 
-            // pnl_albero1
-            // 
-            this.pnl_albero1.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero1.Location = new System.Drawing.Point(40, 116);
-            this.pnl_albero1.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero1.Name = "pnl_albero1";
-            this.pnl_albero1.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero1.TabIndex = 1;
-            // 
-            // pnl_albero10
-            // 
-            this.pnl_albero10.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero10.Location = new System.Drawing.Point(349, 50);
-            this.pnl_albero10.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero10.Name = "pnl_albero10";
-            this.pnl_albero10.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero10.TabIndex = 1;
-            // 
-            // pnl_albero9
-            // 
-            this.pnl_albero9.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero9.Location = new System.Drawing.Point(289, 50);
-            this.pnl_albero9.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero9.Name = "pnl_albero9";
-            this.pnl_albero9.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero9.TabIndex = 1;
-            // 
-            // pnl_albero8
-            // 
-            this.pnl_albero8.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero8.Location = new System.Drawing.Point(241, 50);
-            this.pnl_albero8.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero8.Name = "pnl_albero8";
-            this.pnl_albero8.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero8.TabIndex = 1;
-            // 
-            // pnl_albero7
-            // 
-            this.pnl_albero7.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero7.Location = new System.Drawing.Point(148, 50);
-            this.pnl_albero7.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero7.Name = "pnl_albero7";
-            this.pnl_albero7.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero7.TabIndex = 1;
-            // 
-            // pnl_albero6
-            // 
-            this.pnl_albero6.BackColor = System.Drawing.Color.Green;
-            this.pnl_albero6.Location = new System.Drawing.Point(40, 50);
-            this.pnl_albero6.Margin = new System.Windows.Forms.Padding(4);
-            this.pnl_albero6.Name = "pnl_albero6";
-            this.pnl_albero6.Size = new System.Drawing.Size(40, 37);
-            this.pnl_albero6.TabIndex = 0;
             // 
             // lbl_garga_punti
             // 
@@ -348,6 +239,8 @@
             // 
             // pnl_garga_img
             // 
+            this.pnl_garga_img.BackgroundImage = global::es.Properties.Resources.grr;
+            this.pnl_garga_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnl_garga_img.Location = new System.Drawing.Point(17, 43);
             this.pnl_garga_img.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_garga_img.Name = "pnl_garga_img";
@@ -356,11 +249,156 @@
             // 
             // pnl_puffo_img
             // 
+            this.pnl_puffo_img.BackgroundImage = global::es.Properties.Resources.pff;
+            this.pnl_puffo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnl_puffo_img.Location = new System.Drawing.Point(851, 43);
             this.pnl_puffo_img.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_puffo_img.Name = "pnl_puffo_img";
             this.pnl_puffo_img.Size = new System.Drawing.Size(200, 164);
             this.pnl_puffo_img.TabIndex = 6;
+            // 
+            // pnl_garga
+            // 
+            this.pnl_garga.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_garga.BackgroundImage = global::es.Properties.Resources.gar_removebg_preview__1_;
+            this.pnl_garga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_garga.Location = new System.Drawing.Point(241, 185);
+            this.pnl_garga.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_garga.Name = "pnl_garga";
+            this.pnl_garga.Size = new System.Drawing.Size(40, 37);
+            this.pnl_garga.TabIndex = 4;
+            // 
+            // pnl_puffo
+            // 
+            this.pnl_puffo.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_puffo.BackgroundImage = global::es.Properties.Resources.puff_removebg_preview;
+            this.pnl_puffo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_puffo.Location = new System.Drawing.Point(148, 185);
+            this.pnl_puffo.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_puffo.Name = "pnl_puffo";
+            this.pnl_puffo.Size = new System.Drawing.Size(40, 37);
+            this.pnl_puffo.TabIndex = 1;
+            // 
+            // pnl_casa
+            // 
+            this.pnl_casa.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_casa.BackgroundImage = global::es.Properties.Resources.fun_removebg_preview;
+            this.pnl_casa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_casa.Location = new System.Drawing.Point(40, 185);
+            this.pnl_casa.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_casa.Name = "pnl_casa";
+            this.pnl_casa.Size = new System.Drawing.Size(40, 37);
+            this.pnl_casa.TabIndex = 1;
+            // 
+            // pnl_albero3
+            // 
+            this.pnl_albero3.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero3.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero3.Location = new System.Drawing.Point(241, 116);
+            this.pnl_albero3.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero3.Name = "pnl_albero3";
+            this.pnl_albero3.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero3.TabIndex = 2;
+            // 
+            // pnl_albero2
+            // 
+            this.pnl_albero2.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero2.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero2.Location = new System.Drawing.Point(148, 116);
+            this.pnl_albero2.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero2.Name = "pnl_albero2";
+            this.pnl_albero2.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero2.TabIndex = 1;
+            // 
+            // pnl_albero4
+            // 
+            this.pnl_albero4.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero4.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero4.Location = new System.Drawing.Point(289, 116);
+            this.pnl_albero4.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero4.Name = "pnl_albero4";
+            this.pnl_albero4.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero4.TabIndex = 1;
+            // 
+            // pnl_albero5
+            // 
+            this.pnl_albero5.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero5.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero5.Location = new System.Drawing.Point(349, 116);
+            this.pnl_albero5.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero5.Name = "pnl_albero5";
+            this.pnl_albero5.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero5.TabIndex = 1;
+            // 
+            // pnl_albero1
+            // 
+            this.pnl_albero1.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero1.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero1.Location = new System.Drawing.Point(40, 116);
+            this.pnl_albero1.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero1.Name = "pnl_albero1";
+            this.pnl_albero1.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero1.TabIndex = 1;
+            // 
+            // pnl_albero10
+            // 
+            this.pnl_albero10.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero10.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero10.Location = new System.Drawing.Point(349, 50);
+            this.pnl_albero10.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero10.Name = "pnl_albero10";
+            this.pnl_albero10.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero10.TabIndex = 1;
+            // 
+            // pnl_albero9
+            // 
+            this.pnl_albero9.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero9.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero9.Location = new System.Drawing.Point(289, 50);
+            this.pnl_albero9.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero9.Name = "pnl_albero9";
+            this.pnl_albero9.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero9.TabIndex = 1;
+            // 
+            // pnl_albero8
+            // 
+            this.pnl_albero8.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero8.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero8.Location = new System.Drawing.Point(241, 50);
+            this.pnl_albero8.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero8.Name = "pnl_albero8";
+            this.pnl_albero8.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero8.TabIndex = 1;
+            // 
+            // pnl_albero7
+            // 
+            this.pnl_albero7.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero7.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero7.Location = new System.Drawing.Point(148, 50);
+            this.pnl_albero7.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero7.Name = "pnl_albero7";
+            this.pnl_albero7.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero7.TabIndex = 1;
+            // 
+            // pnl_albero6
+            // 
+            this.pnl_albero6.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_albero6.BackgroundImage = global::es.Properties.Resources.al_removebg_preview;
+            this.pnl_albero6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnl_albero6.Location = new System.Drawing.Point(40, 50);
+            this.pnl_albero6.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_albero6.Name = "pnl_albero6";
+            this.pnl_albero6.Size = new System.Drawing.Size(40, 37);
+            this.pnl_albero6.TabIndex = 0;
             // 
             // Form1
             // 
