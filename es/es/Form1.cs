@@ -69,10 +69,12 @@ namespace es
         int[] x_alberi = new int[10];
         int[] y_alberi = new int[10];
         bool it_albero = false;
+        public Random rnd;
 
         public Form1()
         {
             InitializeComponent();
+            rnd = new Random();
             dimensioni_campo();
             int radnomx_puffo = x_a_caso(pnl_campo.Width - pnl_puffo.Width);
             int randomy_puffo = y_a_caso(pnl_campo.Height - pnl_puffo.Height);
@@ -82,9 +84,22 @@ namespace es
             int randomy_garga = y_a_caso(pnl_campo.Height - pnl_garga.Height);
             puffo_c = new puffo(radnomx_puffo, randomy_puffo);
             casa_c = new casa(radnomx_casa, randomy_casa);
+            MessageBox.Show(puffo_c.x.ToString() + " " + puffo_c.y.ToString());
+            MessageBox.Show(casa_c.x.ToString() + " " + casa_c.y.ToString());
             gargamella_c = new gargamella(randomx_garga, randomy_garga);
             lbl_garga_punti.Text = $"punti di gargamella{punti_garga}";
             lbl_puffo_punti.Text = $"punti del puffo {punti_puffo}";
+            
+            lbl_puffo_punti.Text = $"il punteggio del puffo è: {punti_puffo}";
+            lbl_garga_punti.Text = $"il punteggio di gargamella è: {punti_garga}";
+            aggiorna_albero();
+            aggiona_casa();
+            aggiona_puffo();
+            aggiorna_garga();
+        }
+
+        private void aggiorna_albero()
+        {
             for (int i = 0; i < 10; i++)
             {
                 int randomx_alberi = x_a_caso(pnl_campo.Width - pnl_albero1.Width);
@@ -164,13 +179,7 @@ namespace es
                         break;
                 }
             }
-            lbl_puffo_punti.Text = $"il punteggio del puffo è: {punti_puffo}";
-            lbl_garga_punti.Text = $"il punteggio di gargamella è: {punti_garga}";
-            aggiona_casa();
-            aggiona_puffo();
-            aggiorna_garga();
         }
-
         private void dimensioni_campo()
         {
             pnl_casa.Width = 30;
@@ -188,16 +197,16 @@ namespace es
 
         private void aggiona_casa()
         {
-            pnl_casa.Location = new Point(10, 10);
+            pnl_casa.Location = new Point(casa_c.x, casa_c.y);
         }
 
         private void aggiona_puffo()
         {
             pnl_puffo.Location = new Point(puffo_c.x, puffo_c.y);
         }
-        static private int x_a_caso(int massimo)
+        private int x_a_caso(int massimo)
         {
-            Random rnd = new Random(Environment.TickCount);
+               
             int x = rnd.Next(0, massimo);
             return x;
         }
@@ -362,9 +371,8 @@ namespace es
             }
         }
 
-        static private int y_a_caso(int massimo)
+        private int y_a_caso(int massimo)
         {
-            Random rnd = new Random(Environment.TickCount);
             int y = rnd.Next(0, massimo);
             return y;
         }
